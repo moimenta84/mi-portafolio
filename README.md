@@ -1,5 +1,5 @@
 # mi-portafolio
-mi portafolio personal hecho con html, css y javascript
+Mi portafolio personal hecho con html, css y javascript
 
 ## Descripción
 Esto es mi portafolio personal 
