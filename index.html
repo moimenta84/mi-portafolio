@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? family=Roboto:ital,wght@0,100; 0,300; 0,700; 1,400&display=swap"
+        rel="hoja de estilo">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icono" href="img/javascript.jpg">
+
+</head>
+
+<body>
+    <div class="contenedor-header"><!----menu encabezado-->
+        <header>
+            <div class="logo">
+                <a href="#">Iker</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!---SECCION INICIO-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/Screenshot_2023-11-06-23-19-58-438_com.facebook.katana-edit.jpg" width="60%"
+                    alt="40px"><!--FOTO CURRICULUM-->
+            </div>
+            <h1>IKER MARTÍNEZ</h1>
+            <h2>Ingeniero de software-Experto en Desarrollo Web</h2>
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-telegram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    <!---SECCION SOBRE MI-->
+
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>SOBRE MI</h2>
+            <p>Hola, soy<span>Iker Martínez</span>.Soy un estudiante de programación altamente motivado y apasionado con
+                experiencia en varios lenguajes de programación, incluyendo Jvascript, Java y Html/Css.
+                Tengo experiencia en el desarrollo de software y en la creación de aplicaciones móviles.
+                También he trabajado en proyectos de equipo y he demostrado habilidades de comunicación y colaboración
+                efectivas. Me considero un solucionador de problemas creativo y un aprendiz rápido, y estoy emocionado
+                de aplicar mis habilidades para contribuir al éxito de su empresa.
+                .</p>
+            <div class="fila">
+                <!---DATOS PERSONALES-->
+                <div class="col">
+                    <h3>DATOS PERSONALES</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños:</strong>
+                            04-10-1984
+                        </li>
+                        <li>
+                            <strong>Telefono:</strong>
+                            660655985
+                        </li>
+                        <li>
+                            <strong>Email:</strong>
+                            ikerastra@hotmail.com
+                        </li>
+                        <li>
+                            <strong>Pagina web:</strong>
+                            www.desarrollador.com
+                        </li>
+                        <li>
+                            <strong>Direccion:</strong>
+                            Gabriel Miro 14,Vergel(Alicante)
+                        </li>
+                        <li>
+                            <strong>Cargo:</strong>
+                            <span>Estudiante</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--INTERESES-->
+                <div class="col">
+                    <h3>INTERESES</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MUSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-basketball"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-apple"></i>
+                            <span>MAC OS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>MONTAÑA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-regular fa-futbol"></i>
+                            <span>REDES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-car"></i>
+                            <span>AUTOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!----SECCION SKILL-->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>SKILLS</h2>
+            <div class="fila">
+                <!----Tecnologia-->
+                <div class="col">
+                    <h3>TECHNICAL SKILLS</h3>
+                    <div class="skill">
+                        <span>JAVASCRIPT</span>
+                        <div class="barra-skill">
+                            <div class="progreso ">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML&CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>GIT</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!---Profesional skills-->
+                <div class="col">
+                    <h3>PROFESIONAL SKILL</h3>
+                    <div class="skill">
+                        <span>COMUNICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>TRABAJO EN EQUIPO</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CREATIVIDAD</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>DEDICACIÓN</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>100%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CURRICULUM-->
+    <section id="curriculim" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+        </div>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación</h3>
+                <div class="item izq">
+                    <h4>BACHILLERATO</h4>
+                    <span class="fecha">2000-2002</span>
+                    <p>Durante mi tiempo en el instituto, adquirí habilidades valiosas en matemáticas, ciencias y
+                        humanidades.
+                        También participé en varios proyectos extracurriculares,
+                        incluyendo un club de programación y un equipo de robótica.!</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>CURSO DE SEGURIDAD</h4>
+                    <span class="fecha">2010-2011</span>
+                    <p>Este curso cubrió temas como la seguridad de bienes. Adquirí habilidades en la identificación de
+                        vulnerabilidades de seguridad y en la implementación de medidas de seguridad.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item izq">
+                    <h4>Desarrollador aplicaciones web</h4>
+                    <span class="fecha">2020-2022</span>
+                    <p>Este curso cubrió temas como el desarrollo de aplicaciones móviles, la programación de bases de
+                        datos y el desarrollo de aplicaciones web desde cero.
+                        Adquirí habilidades en el trabajo con diferentes lenguajes de programación y desarrollé un
+                        proyecto de aplicación web desde cero.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col derecha">
+                <h3>Experiencia laboral</h3>
+                <div class="item dere">
+                    <h4>front developer</h4>
+                    <span class="casa">Ntt data</span>
+                    <span class="fecha">2019-2022</span>
+                    <p> HTML, CSS y JAVASCRIPT.
+                        Trabajo en estrecha colaboración con diseñadores y desarrolladores de back-end para garantizar
+                        una experiencia de usuario coherente y de alta calidad.
+                        Optimización de la velocidad y el rendimiento del sitio web.
+                        Garantizar la compatibilidad con diferentes navegadores y dispositivos.
+                        Contribución a proyectos de código abierto.</p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item dere">
+                    <h4>Seguridad</h4>
+                    <span class="casa">Securitas</span>
+                    <span class="fecha">2012-2022</span>
+                    <p>Identificación y prevención de situaciones de riesgo.
+                        Comunicación efectiva con los clientes y el personal de seguridad.
+                        Trabajo bajo presión en situaciones de emergencia.
+                        Recepción y registro de visitantes y proveedores.
+                        Patrullaje y vigilancia de las instalaciones.
+                        Resolución de conflictos y situaciones de crisis.
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+                <div class="item dere">
+                    <h4>Seguridad</h4>
+                    <span class="casa">Prosegur</span>
+                    <span class="fecha">2010-2012</span>
+                    <p>Identificación y prevención de situaciones de riesgo.
+                        Comunicación efectiva con los clientes y el personal de seguridad.
+                        Trabajo bajo presión en situaciones de emergencia.
+                        Recepción y registro de visitantes y proveedores.
+                        Patrullaje y vigilancia de las instalaciones.
+                        Resolución de conflictos y situaciones de crisis.
+                    </p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---SECCION PORTAFOLIO-->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>PORTAFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/cafe.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>diseño creativo
+                            <p>Fotografia</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio3jpg.jpg" alt="">
+                    <div class="overlay">
+                        <h3>diseño creativo
+                            <p>Fotografia</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/protafolio.jpg" alt="">
+                    <div class="overlay">
+                        <h3>diseño creativo
+                            <p>Fotografia</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio4.jpeg" alt="">
+                    <div class="overlay">
+                        <h3>diseño creativo
+                            <p>Fotografia</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/imagen1jpg.jpg" alt="">
+                    <div class="overlay">
+                        <h3>diseño creativo
+                            <p>Fotografia</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/portafolio7.jpg" alt="">
+                    <div class="overlay">
+                        <h3>diseño creativo
+                            <p>Fotografia</p>
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--SECCION CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!--formulario-->
+                <div class="col">
+                    <input type="text" placeholder="tu nombre">
+                    <input type="text" placeholder="numero telefonico">
+                    <input type="text" placeholder="direccion de correo">
+                    <input type="text" placeholder="tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="mensaje"></textarea>
+                    <button>enviar mensaje <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span></button>
+                </div>
+                <!---MAPA-->
+                <div class="col">
+                    <img src="img/mapa2.jpeg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Vergel, españa 03770
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                Llamanos : 660655985
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email:ikerastra@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--- FOOTTER-->
+    <footer>
+        <a href="" id="inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
