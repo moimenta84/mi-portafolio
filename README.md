@@ -1,6 +1,5 @@
 # 🚀 Iker Martínez
 
-**Ingeniero de software / Desarrollador Web & Móvil**
 
 ---
 
