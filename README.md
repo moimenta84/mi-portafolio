@@ -20,10 +20,8 @@ Soy **Iker Martínez**, desarrollador apasionado por crear soluciones digitales 
 
 ## 📸 Capturas de pantalla
 
-<img width="903" alt="image" src="https://github.com/moimenta84/mi-portafolio/assets/138805316/e2c2335e-e16c-4ce3-8b87-56f889100d5a">
+<img width="1886" height="960" alt="Captura de pantalla 2025-09-17 142201" src="https://github.com/user-attachments/assets/8d153c1d-9f14-4462-be2d-b87d089a3c5d" />
 
-
----
 
 ## 🔍 Secciones del portafolio
 
